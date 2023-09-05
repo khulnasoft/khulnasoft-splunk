@@ -24,10 +24,10 @@
 2. A __Splunk Universal Forwarder__ installed along with the Khulnasoft Manager.
 3. At least one __Splunk Enterprise Indexer__.
 
-### Using the Web User Interface (WUI)
+### Using the Web User Interface (KUI)
 
 1. Download the App package that matches your installation (Khulnasoft and Splunk version, check the [Compatibilty Matrix](#compatibility-matrix)).
-2. Go to the Splunk WUI main page and click on the **gear** icon (Manage Apps), at the sidebar.
+2. Go to the Splunk KUI main page and click on the **gear** icon (Manage Apps), at the sidebar.
 3. Click on the `Install App from file` button.
 4. Select and upload the downloaded App package.
 5. Check the `Upgrade App` checkbox if a Khulnasoft App is already installed.

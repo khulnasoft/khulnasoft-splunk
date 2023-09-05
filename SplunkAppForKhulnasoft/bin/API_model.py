@@ -57,7 +57,7 @@ class API_model:
         del self.password
 
     def can_use_run_as(self):
-        return self.run_as and self.user == "khulnasoft-wui"
+        return self.run_as and self.user == "khulnasoft-kui"
 
     # ------------------------------------------------------------ #
     #   Utility methods (data validation)
