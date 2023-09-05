@@ -1,0 +1,3 @@
+node_modules/
+SplunkAppForKhulnasoft/appserver/static/js/utils/codemirror
+SplunkAppForKhulnasoft/appserver/static/js/libs/*

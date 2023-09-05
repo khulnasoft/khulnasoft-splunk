@@ -1,0 +1,9 @@
+*.tar.gz
+sync.sh
+node_modules
+package-lock.json
+.vscode
+SplunkAppForKhulnasoft/metadata/local.meta
+SplunkAppForKhulnasoft/default/app.conf
+SplunkAppForKhulnasoft/local/
+__pycache__/
