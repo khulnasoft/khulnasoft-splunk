@@ -37,7 +37,12 @@ define([], function () {
       return search(parameters.term, parameters.removeFilters)
     },
 
-    khulnasoftRemoveFilter: (parameters, instance, $tableFilterService, init) => {
+    khulnasoftRemoveFilter: (
+      parameters,
+      instance,
+      $tableFilterService,
+      init
+    ) => {
       instance.filters = instance.filters.filter(
         (item) => item.name !== parameters.filterName
       )

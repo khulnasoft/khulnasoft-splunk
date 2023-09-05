@@ -2026,7 +2026,8 @@ label.wz-icon-loupe:before {
   bottom: 0;
   width: 20px;
   height: 40px;
-  background: url(/static/app/SplunkAppForKhulnasoft/css/images/loupe.png) no-repeat;
+  background: url(/static/app/SplunkAppForKhulnasoft/css/images/loupe.png)
+    no-repeat;
   background-size: 18px;
 }
 

@@ -150,8 +150,10 @@
                   </span>
                   Invoke-WebRequest -Uri
                   https://packages.khulnasoft.com/4.x/windows/khulnasoft-agent-{{khulnasoftVersion}}-1.msi
-                  -OutFile ${env:tmp}\khulnasoft-agent-{{khulnasoftVersion}}.msi;
-                  msiexec.exe /i ${env:tmp}\khulnasoft-agent-{{khulnasoftVersion}}.msi /q
+                  -OutFile
+                  ${env:tmp}\khulnasoft-agent-{{khulnasoftVersion}}.msi;
+                  msiexec.exe /i
+                  ${env:tmp}\khulnasoft-agent-{{khulnasoftVersion}}.msi /q
                   KHULNASOFT_MANAGER='{{config.managerIp}}'
                   KHULNASOFT_REGISTRATION_SERVER='{{config.managerIp}}'
                 </div>
@@ -171,8 +173,8 @@
                   curl -so khulnasoft-agent.pkg
                   https://packages.khulnasoft.com/4.x/osx/khulnasoft-agent-{{khulnasoftVersion}}-1.pkg
                   && sudo echo "KHULNASOFT_MANAGER='{{config.managerIp}}'" >
-                  /tmp/khulnasoft_envs && sudo installer -pkg ./khulnasoft-agent.pkg
-                  -target /
+                  /tmp/khulnasoft_envs && sudo installer -pkg
+                  ./khulnasoft-agent.pkg -target /
                 </div>
               </div>
             </div>

@@ -63,7 +63,10 @@ define(['../../module', '../rules/ruleset'], function (controllers, Ruleset) {
     $onInit() {
       this.scope.localFilter = false
       // Reloading event listener
-      this.scope.$broadcast('khulnasoftSearch', { term: '', removeFilters: true })
+      this.scope.$broadcast('khulnasoftSearch', {
+        term: '',
+        removeFilters: true,
+      })
       this.scope.downloadCsv = (path, name) => this.downloadCsv(path, name)
       this.scope.onlyParents = (typeFilter) => this.onlyParents(typeFilter)
       this.scope.addNewFile = () => this.addNewFile()
@@ -102,7 +105,9 @@ define(['../../module', '../rules/ruleset'], function (controllers, Ruleset) {
       }
       if (typeFilter === 'all') {
         this.scope.onlyParentDecoders = false
-        this.scope.$broadcast('khulnasoftUpdateInstancePath', { path: '/decoders' })
+        this.scope.$broadcast('khulnasoftUpdateInstancePath', {
+          path: '/decoders',
+        })
       } else {
         this.scope.onlyParentDecoders = true
         this.scope.$broadcast('khulnasoftUpdateInstancePath', {

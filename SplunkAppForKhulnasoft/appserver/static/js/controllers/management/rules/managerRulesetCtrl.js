@@ -56,7 +56,10 @@ define(['../../module', './ruleset'], function (controllers, Ruleset) {
     $onInit() {
       this.scope.localFilter = false
       this.scope.downloadCsv = (path, name) => this.downloadCsv(path, name)
-      this.scope.$broadcast('khulnasoftSearch', { term: '', removeFilters: true })
+      this.scope.$broadcast('khulnasoftSearch', {
+        term: '',
+        removeFilters: true,
+      })
       this.scope.addNewFile = () => this.addNewFile()
       this.scope.saveRuleConfig = (fileName, dir, overwrite) =>
         this.saveRuleConfig(fileName, dir, overwrite)

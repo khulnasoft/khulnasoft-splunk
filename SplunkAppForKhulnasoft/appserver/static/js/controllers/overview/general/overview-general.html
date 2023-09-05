@@ -168,7 +168,9 @@
           flex="33"
           class="wz-md-card"
           ng-class="{'fullscreen': expandArray[4]}">
-          <md-card-content class="khulnasoft-column" ng-show="wzMonitoringEnabled">
+          <md-card-content
+            class="khulnasoft-column"
+            ng-show="wzMonitoringEnabled">
             <span class="wz-headline-title"
               >Agents status
               <span
@@ -181,7 +183,9 @@
             <md-divider class="wz-margin-top-10"></md-divider>
             <div id="agentStatus"></div>
           </md-card-content>
-          <md-card-content class="khulnasoft-column" ng-show="!wzMonitoringEnabled">
+          <md-card-content
+            class="khulnasoft-column"
+            ng-show="!wzMonitoringEnabled">
             <span class="wz-headline-title">Agents status</span>
             <md-divider class="wz-margin-top-10"></md-divider>
             <div layout="row">

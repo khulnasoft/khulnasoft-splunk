@@ -66,7 +66,10 @@ define([
 
       this.scope.overwrite = false
       this.scope.downloadCsv = (path, name) => this.downloadCsv(path, name)
-      this.scope.$broadcast('khulnasoftSearch', { term: '', removeFilters: true })
+      this.scope.$broadcast('khulnasoftSearch', {
+        term: '',
+        removeFilters: true,
+      })
       this.scope.selectedNavTab = 'cdbList'
 
       /**

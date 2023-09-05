@@ -88,7 +88,9 @@ define(['../module'], function (directives) {
         }
 
         $scope.getVersion = async () => {
-          $scope.khulnasoftVersion = await $requestService.apiReq('/manager/info')
+          $scope.khulnasoftVersion = await $requestService.apiReq(
+            '/manager/info'
+          )
           $scope.khulnasoftVersion =
             (
               ((($scope.khulnasoftVersion || {}).data || {}).data || {})

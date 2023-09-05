@@ -376,7 +376,10 @@ define(['../../module', 'FileSaver'], function (app) {
         this.scope.$broadcast('khulnasoftFilter', { filter })
       } else {
         clearInput = false
-        this.scope.$broadcast('khulnasoftSearch', { term, removeFilters: false })
+        this.scope.$broadcast('khulnasoftSearch', {
+          term,
+          removeFilters: false,
+        })
       }
       if (clearInput) {
         const searchBar = $('#search-input-rules')

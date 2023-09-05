@@ -558,7 +558,9 @@ define(['../module'], function (module) {
               '$security_service',
               async ($security_service) => {
                 try {
-                  return await $security_service.hasKhulnasoftRole('administrator')
+                  return await $security_service.hasKhulnasoftRole(
+                    'administrator'
+                  )
                 } catch (error) {
                   return false
                 }

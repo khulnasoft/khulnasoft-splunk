@@ -144,7 +144,10 @@ define(['../../module'], function (app) {
             this.scope.goGroups = (group) => this.goGroups(group)
 
             this.scope.searchRootcheck = (term, specificFilter) =>
-              this.scope.$broadcast('khulnasoftSearch', { term, specificFilter })
+              this.scope.$broadcast('khulnasoftSearch', {
+                term,
+                specificFilter,
+              })
 
             this.scope.checkModules = (module) => this.checkModules(module)
 
